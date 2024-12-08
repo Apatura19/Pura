@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern, clean font */
+    background: linear-gradient(120deg, #f4f4f9, #e6e9f0); /* Light gradient background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4CAF50, #45a049); /* Gradient green header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0e0e0; /* Softer hover effect */
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0077cc, #005fa3);
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #4CAF50; /* Accent color for subheadings */
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h4 {
+    color: #070707;
+    font-size: 28px;
+    font-weight: bold;
+    
+    
+    
+    
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Smooth edges */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    transition: background 0.3s ease;
+}
+
+td:hover {
+    background: #f1f1f1; /* Subtle hover effect */
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 8px rgba(0, 119, 204, 0.2);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0077cc, #005fa3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #09cff1, #0077cc);
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0077cc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Multimedia and Frames */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded edges */
+}
+
+.center-audio {
+    display: block;
+    margin: 20px auto;
+}

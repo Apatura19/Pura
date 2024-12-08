@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Feedback Form</h1>
+    </header>
+    <section>
+        <form action="thank_you.html" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name"><br><br>
+
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Learning Experience</legend>
+                
+                <label>Did you learn something new from our website?</label><br>
+                <input type="radio" id="yes" name="learned" value="yes" required> Yes
+                <input type="radio" id="no" name="learned" value="no"> No<br><br>
+
+                <label for="topics">Which topics did you find most useful? (Select all that apply)</label><br>
+                <input type="checkbox" id="viruses" name="topics" value="viruses"> Viruses<br>
+                <input type="checkbox" id="malware" name="topics" value="malware"> Malware<br>
+                <input type="checkbox" id="spam" name="topics" value="spam"> Spam<br>
+                <input type="checkbox" id="plagiarism" name="topics" value="plagiarism"> Plagiarism<br><br>
+
+                <label for="difficulty">How would you rate the difficulty of the content?</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="" disabled selected>Select difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="difficult">Difficult</option>
+                </select><br><br>
+
+                <label for="feedback">What did you like or dislike? (Optional)</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="30" placeholder="Your feedback..."></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        
+        <a href="index.html"><button type="button">Home</button></a>
+    </section>
+</body>
+</html>
